@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="javascript.js" defer></script>
+    <title>Learn</title>
+</head>
+<body>
+    <div class="header">
+        <button id="ShowDialog">Add Book</button>
+    </div>
+    <dialog class="myDialog">
+
+        <label for="bookName">Book name:</label>
+        <input type="text" id="bookName">
+
+        <label for="BookAuthor">Author:</label>
+        <input type="text" id="bookAuthor">
+
+        <label for="pages">Number of pages:</label>
+        <input type="text" id="pages">
+
+        <button type="submit" onclick="addToLibrary()">Add</button>
+    </dialog>
+    <div class="showBook"></div>
+    
+</body>
+</html>
